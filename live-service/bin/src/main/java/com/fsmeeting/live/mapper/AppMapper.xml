@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.fsmeeting.live.mapper.AppMapper">
+
+	<select id="countService" parameterType="com.fastonz.live.sliceprotocol.model.AppModel" resultType="java.lang.Integer">
+		SELECT 
+		  COUNT(1) 
+		FROM
+		  t_services 
+		WHERE appId = #{appId}
+	</select>
+	
+	<insert id="registerService" parameterType="com.fastonz.live.sliceprotocol.model.AppModel">
+		INSERT INTO t_services (
+		  appId,
+		  appType,
+		  `desc`,
+		  address,
+		  weight,
+		  `status`,
+		  registerTime,
+		  lastActivateTime
+		) 
+		VALUES
+		  (
+		  	#{appId},
+		  	#{appType},
+		  	#{desc},
+		  	#{address},
+		  	#{weight},
+		  	'1',
+		  	sysdate(),
+		  	sysdate()
+		  )
+	</insert>
+
+
+</mapper>

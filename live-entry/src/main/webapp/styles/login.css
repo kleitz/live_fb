@@ -1,0 +1,118 @@
+#main{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-left: -490px;
+    margin-top: -370px;
+}
+#container{
+    padding: 20px 50px;
+    width: 890px;
+    height: 480px;
+    background: #fff;
+
+
+}
+.logo{
+    background: url(../images/00.png) no-repeat;
+    height: 73px;
+    width: 213px;
+    display: block;
+    text-indent: -999px;
+    margin: 10px auto;
+}
+.logo>a{
+    display: block;
+    height: 73px;
+    width: 213px;
+}
+.login-box{
+    width: 400px;
+    margin: 30px 0 0 50px;
+}
+.meeting-tit{
+    font-size: 20px;
+    color: #656f7c;
+    line-height: 50px;
+}
+.meeting-tit .second{
+    border-left: 1px solid #808893;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.meeting-info{
+    line-height: 30px;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+.invitation-code-text,.nickname-text{
+    width: 360px;
+    height: 43px;
+    border: 1px solid #d7dfe4;
+    padding-left: 10px;
+    margin-top: 25px;
+}
+.login-btn{
+    width: 370px;
+    height: 43px;
+    background: #28aaf4;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 30px;
+}
+.download-client{
+    margin: 30px 0 0 0;
+    border-left: 1px dashed #dee4e7;
+    width: 330px;
+}
+.download-client>img{
+    margin: 10px auto;
+}
+.download-client>p{
+    text-align: center;
+    color: #656f7c;
+}
+.download-btn{
+    background: url("../images/03.png") no-repeat;
+    height: 49px;
+    width: 165px;
+    margin: 55px auto;
+    display: block;
+}
+.menu:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+footer{
+    margin-top: 80px;
+}
+.menu{
+    width: 590px;
+    margin: auto;
+    text-align: center;
+}
+.menu li{
+    float: left;
+    margin: 10px;
+    padding: 0 15px 0 5px;
+    border-right: 1px solid #a6bbc7;
+}
+.menu li a{
+    color: #a6bbc7;
+}
+.border-none{
+    border-right: none;
+}
+.language{
+    border: 1px solid #a6bbc7;
+    padding: 3px;
+    color: #a6bbc7;
+    margin-top: -10px;
+}
+.copyright{
+    text-align: center;
+    color: #a6bbc7;
+    margin-top: 10px;
+}

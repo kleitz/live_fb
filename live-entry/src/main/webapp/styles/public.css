@@ -1,0 +1,60 @@
+html,body {
+    font-family: "Microsoft YaHei";
+    color: #424242;
+    font-size: 14px;
+    background: #edf3f7
+}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td,dl,dd,dt {
+    padding: 0;
+    margin: 0
+}
+input,select,button{
+    font-family: "Microsoft YaHei";
+    outline:none
+}
+input:focus {
+    border: 1px solid #aaacb0;
+}
+dl,dd,dt{
+    display: block;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+fieldset,img {
+    border: 0
+}
+em,th,i {
+    font-weight: normal;
+    font-style: normal
+}
+ol,ul {
+    list-style: none
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%
+}
+a{ text-decoration: none;outline: none}
+a:hover{
+    color: #28aaf4;
+}
+img{ display: block}
+
+
+/*common*/
+.w{ width: 1190px; margin: auto}
+.l { float: left}
+.r { float: right}
+.clear { clear: both}
+.none { display: none}
+.relative { position: relative}
+.absolute { position: absolute}
+.blue{
+    color: #28aaf4;
+}
+.mar15{
+    margin-left: 15px;
+}

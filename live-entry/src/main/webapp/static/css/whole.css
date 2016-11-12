@@ -1,0 +1,276 @@
+.second-div {
+	min-height: 60px;
+}
+.second-div .ibox-tools {
+	margin-top: 5px;
+}
+.left-line {
+	border-left: 2px solid #3190cd;
+    text-indent: 0.5em;
+}
+.page-center {
+    text-align: center;
+}
+.page-center .pagination {
+    margin: 0;
+}
+
+.g-color {
+	color: #33ac80;
+}
+.r-color {
+    color: #ec3f3f;
+}
+.ibox-title h3 {
+    display: inline-block;
+    margin: 0 0 7px;
+    padding: 5px 0;
+    text-overflow: ellipsis;
+    float: left;
+}
+.navbar {
+	min-height: 0 !important;
+	margin-bottom: 0 !important;
+}
+.navbar-nav {
+	margin: 0;
+}
+.navbar-toggle {
+    padding: 8px 9px;
+}
+.navbar-collapse {
+	padding: 0 !important;
+	border: 0;
+}
+div#bs-example-navbar-collapse-1 {
+	width: 100%;
+}
+.navbar-collapse.in {
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+.container-fluid {
+	padding: 0 !important;
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header{
+	margin: 0 !important;
+}
+.img-a {
+	background: url(../img/logo1.png) no-repeat;
+	background-size: cover;
+    width: 136px;
+    margin-top: -5px;
+    cursor: default;
+}
+.li-a {
+	font-size: 15px !important;
+	color: #a7b1c2 !important;
+	text-align: center;
+}
+.li-a:hover {
+	color: #fff !important;
+}
+.img-b {
+	background: url(../img/logo1.png) no-repeat;
+	background-size: cover;
+	width: 136px;
+	padding: 0;
+	margin-top: -5px;
+	cursor: default;
+}
+
+.banner-img img{
+	width: 100%;
+}
+@media (min-width: 768px){
+	.body-wrap-list{
+	    width: 1000px;
+	}
+}
+.body-wrap-list{
+	margin: auto;
+}
+.body-wrap{
+	position: relative;
+	background-color: #2f4050;
+}
+div#bs-example-navbar-collapse-1{
+	background-color: #2f4050;
+}
+.contact-div p {
+	font-size: 16px;
+}
+.address span {
+	font-size: 14px;
+}
+.address .time {
+	color: #007AFF;
+}
+.address .service {
+    color: #47a800;
+}
+
+/*共用的样式(多的话考虑单独成一个css文件)*/
+.login-bg {
+	height: auto;
+	background: url(../img/background.png) no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.login-form {
+	width: 360px;
+	padding: 20px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	background-color: rgba(255,255,255,.5);
+}
+.login-title {
+	color: #fff;
+	font-weight: 800;
+	font-size: 90px;
+	letter-spacing: -4px;
+}
+.login-subtitle {
+	color: #e6e6e6;
+}
+.p-t-10 {
+	padding-top: 10px;
+}
+.p-t-200 {
+	padding-top: 200px;
+}
+.p-r-15 {
+	padding-right: 15px;
+}
+.p-r-20 {
+	padding-right: 20px;
+}
+.p-b-0 {
+	padding-bottom: 0;
+}
+.p-b-20 {
+	padding-bottom: 20px;
+}
+.m-t-0 {
+	margin-top: 0;
+}
+.m-t-15 {
+	margin-top: 15px;
+}
+.m-b-0 {
+	margin-bottom: 0;
+}
+.m-b-15 {
+	margin-bottom: 15px;
+}
+.m-b-20 {
+	margin-bottom: 20px;
+}
+.m-b-30 {
+	margin-bottom: 30px;
+}
+.b-n {
+	border: none;
+}
+.active {
+	color: #333;
+	background: #eee;
+}
+.btn {
+	outline: none;
+}
+.btn:active {
+	outline: none;
+}
+.btn:focus {
+	outline: none;
+}
+.btn:active:focus {
+	outline: none;
+}
+.float-e-margins .btn {
+	margin-bottom: 0;
+}
+.exit {
+	padding: 15px;
+	color: #a7b1c2;
+	font-size: 14px;
+	float: right;
+}
+.exit:hover {
+	color: #fff;
+	background-color: #293846;
+}
+/*浏览器低版本提示语*/
+.low-version-bg {
+	width: 900px;
+	padding: 25px 40px;
+	margin: auto;
+	background-color: rgba(255,255,255,.655);
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	-o-border-radius: 12px;
+	-ms-border-radius: 12px;
+	border-radius: 12px;
+}
+.low-version-bg ul {
+	padding: 0;
+}
+.low-version-bg ul li {
+	list-style-type: none;
+	text-align: left;
+	margin:0 0 10px;
+}
+/*首页*/
+.white-bg-index {
+	background-color: #fff;
+}
+/*服务器实时数据*/
+.server-tb-edit {
+	display: block;
+	width: 30px;
+}
+/*用户实时数据*/
+.white-bg {
+	background-color: #fff !important;
+	cursor: pointer !important;
+}
+
+/*接入优化首页*/
+.li-style li{
+	/*list-style-type: none;*/
+	padding: 5px 20px 5px 0;
+	cursor: pointer;
+}
+.ul-style {
+	width: 400px;
+	height: 600px;
+	padding: 15px 0 15px 30px;
+	overflow: auto;
+	border:1px solid #ddd;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.btn-lr {
+	width: 110px;
+	padding: 0 15px;
+}
+.btn-lr button {
+	width: 100%;
+	margin-bottom: 10px !important;
+}
+/*接入优化-系统设置-备份提交*/
+.max-h-400 {
+	max-height: 400px;
+	overflow: auto;
+	padding: 20px;
+}
+.max-h-500 {
+	max-height: 500px;
+	overflow: auto;
+	padding: 20px;
+}
