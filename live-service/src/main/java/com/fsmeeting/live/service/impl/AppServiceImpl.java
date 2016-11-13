@@ -129,12 +129,14 @@ public class AppServiceImpl implements IAppService
 		 */
 		ValueOperations<String, Integer> intValueOper = redisIntValue.opsForValue();
 
-		Set<String> appIds = maps.keySet(); // TODO
+		Set<String> appIds = maps.keySet(); 
 
 		for (Iterator<String> itr = appIds.iterator(); itr.hasNext();)
 		{
 			String key = itr.next();
-			if (null == intValueOper.get(Constants.Redis.Key.SERVICE_ACTIVE_PRIFIXER + key))
+			LiveService service = maps.get(key);
+			if (null == intValueOper.get(Constants.Redis.Key.SERVICE_ACTIVE_PRIFIXER + key)
+					|| appType != service.getAppType())
 			{
 				itr.remove();
 			}

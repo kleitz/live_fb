@@ -37,7 +37,7 @@ public class AppServiceTest
 			AppModel model = new AppModel();
 			model.setAddress("南山 深圳");
 			model.setAppId("20161112:" + UUID.randomUUID().toString().substring(0, 32));
-			model.setAppType(0);
+			model.setAppType(RMD.nextInt(3));
 			model.setDesc("nike");
 			model.setWeight(2000);
 			boolean methodRes = appService.register(model);
@@ -48,7 +48,7 @@ public class AppServiceTest
 	@Test
 	public void heartbeat() throws Exception
 	{
-		for (int i = 0; i < 20; i++)
+		for (int i = 0; i < 10; i++)
 		{
 			AppHeartbeatModel model = new AppHeartbeatModel();
 			model.setAppId("20161112:65b568d0-1478-44a1-8f20-381f669e");
@@ -56,7 +56,7 @@ public class AppServiceTest
 			model.setCurLoad(RMD.nextInt(2000));
 			appService.heartbeat(model);
 
-			long sleep = RMD.nextInt(20);
+			long sleep = RMD.nextInt(10);
 			LOG.info(String.valueOf(sleep));
 			TimeUnit.SECONDS.sleep(sleep);
 		}
@@ -67,14 +67,14 @@ public class AppServiceTest
 	public void getMinLoad() throws Exception
 	{
 		List<String> appList = new ArrayList<>();
-		appList.add("20161112:65b568d0-1478-44a1-8f20-381f669e");
-		appList.add("20161112:d45f2237-2e40-4018-a9e3-3f2809cc");
-		appList.add("20161112:e2815a6b-f922-4f8b-b3b3-20084b61");
-		appList.add("20161112:0020c2c6-9be6-4f6a-88f2-a88df9d4");
-		appList.add("20161112:88aece19-b10b-48c0-bd0a-9ee82900");
-		appList.add("20161112:6ba83011-b882-4442-a344-7ce0a2a6");
-		appList.add("20161112:bec87cf5-82bc-4a2b-a123-83755dfb");
-		appList.add("20161112:4eee2b0d-8f14-404f-9370-564440e0");
+		appList.add("20161112:820bacf2-d2bf-486b-b1fa-757c6c1e");
+		appList.add("20161112:e10b2f87-706d-4d38-87ca-9d24acd2");
+		appList.add("20161112:4651fa20-36b4-43d1-ab60-1e16cf15");
+		appList.add("20161112:1db5aec6-939a-46ba-a65e-334d8ec0");
+		appList.add("20161112:d1aa2002-e2c4-4ec8-bd20-963412bc");
+		appList.add("20161112:2f14683c-1ab0-472f-9826-bf4c6ec7");
+		appList.add("20161112:7f228b58-69ac-4855-93fc-1dd7864d");
+		appList.add("20161112:288f615e-5e9e-4671-acc7-fdb79c71");
 		for (String appId : appList)
 		{
 			AppHeartbeatModel model = new AppHeartbeatModel();
